@@ -1,0 +1,50 @@
+service: YOUR_API
+
+frameworkVersion: "2.49.0"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: eu-west-1 # Your region
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "YOUR_DYNAMODB_TABLE_URL"
+
+functions:
+  get:
+    handler: controllers/read.handler
+    events:
+      - http:
+          path: currency/{code}
+          method: get
+      - http:
+          path: currency
+          method: get
+
+  post:
+    handler: controllers/create.handler
+    events:
+      - http:
+          path: currency
+          method: post
+    
+  put:
+    handler: controllers/update.handler
+    events:
+      - http:
+          path: currency/{code}
+          method: put
+
+  delete:
+    handler: controllers/delete.handler
+    events:
+      - http:
+          path: currency/{code}
+          method: delete

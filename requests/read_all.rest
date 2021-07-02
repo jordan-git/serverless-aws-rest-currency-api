@@ -1,0 +1,1 @@
+GET https://lgn9xxhrag.execute-api.eu-west-1.amazonaws.com/dev/currency

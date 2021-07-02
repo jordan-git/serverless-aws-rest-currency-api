@@ -1,0 +1,7 @@
+PUT https://lgn9xxhrag.execute-api.eu-west-1.amazonaws.com/dev/currency/TST
+Content-Type: application/json
+
+{
+    "name": "Another Test",
+    "rates": []
+}

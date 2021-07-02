@@ -1,0 +1,53 @@
+POST https://lgn9xxhrag.execute-api.eu-west-1.amazonaws.com/dev/currency
+Content-Type: application/json
+
+{
+    "code": "TST",
+    "name": "Test Currency",
+    "rates": [["EUR", "0.86"], ["GBP", "1.13"], ["USD", "1.034"], ["JPY", "0.91"], ["CAD", "0.94"]]
+}
+###
+POST https://lgn9xxhrag.execute-api.eu-west-1.amazonaws.com/dev/currency
+Content-Type: application/json
+
+{
+    "code": "EUR",
+    "name": "European Euro",
+    "rates": [["GBP", "0.86"], ["USD", "1.13"], ["JPY", "1.034"], ["CAD", "0.91"]]
+}
+###
+POST https://lgn9xxhrag.execute-api.eu-west-1.amazonaws.com/dev/currency
+Content-Type: application/json
+
+{
+    "code": "GBP",
+    "name": "Great British Pounds",
+    "rates": [["EUR", "0.86"], ["USD", "1.13"], ["JPY", "1.034"], ["CAD", "0.91"]]
+}
+###
+POST https://lgn9xxhrag.execute-api.eu-west-1.amazonaws.com/dev/currency
+Content-Type: application/json
+
+{
+    "code": "USD",
+    "name": "United States Dollar",
+    "rates": [["EUR", "0.86"], ["GBP", "1.13"], ["JPY", "1.034"], ["CAD", "0.91"]]
+}
+###
+POST https://lgn9xxhrag.execute-api.eu-west-1.amazonaws.com/dev/currency
+Content-Type: application/json
+
+{
+    "code": "JPY",
+    "name": "Yen",
+    "rates": [["EUR", "0.86"], ["GBP", "1.13"], ["USD", "1.034"], ["CAD", "0.91"]]
+}
+###
+POST https://lgn9xxhrag.execute-api.eu-west-1.amazonaws.com/dev/currency
+Content-Type: application/json
+
+{
+    "code": "CAD",
+    "name": "Canadian Dollar",
+    "rates": [["EUR", "0.86"], ["GBP", "1.13"], ["USD", "1.034"], ["JPY", "0.91"]]
+}
